@@ -212,6 +212,8 @@ a{
 }
 .cart-btn p{
     margin-left: 10px;
+    color: #fff;
+    font-size:1.3rem;
 }
 .toggle-btn{
     display: none;
