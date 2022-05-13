@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section class="section">
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="links-container">
+          <img src="./images/icon-menu.svg" alt="toggleBtn" class="toggle-btn">
+          <img src="./images/logo.svg" alt="logo" class="logo">
+          <ul class="links">
+            <li><a href="#" class="link">Collections</a></li>
+            <li><a href="#" class="link">men</a></li>
+            <li><a href="#" class="link">women</a></li>
+            <li><a href="#" class="link">about</a></li>
+            <li><a href="#" class="link">contact</a></li>
+          </ul>
+        </div>
+        <div class="cart-container">
+          <img src="./images/icon-cart.svg" alt="cart" class="cart">
+ 
+            <img src="./images/image-avatar.png" alt="" class="person-img">
+          
+        </div>
+      </div>
+    </nav>
+    <main class="page">
+      <div class="page-container">
+        <div class="image-container">
+          <div class="main-image">
+            <img src="./images/icon-previous.svg" alt="" class="prev-btn">
+            <img src="./images/image-product-1.jpg" alt="" class="img img1">
+            <img src="./images/image-product-2.jpg" alt="" class="img img2">
+            <img src="./images/image-product-3.jpg" alt="" class="img img3">
+            <img src="./images/image-product-4.jpg" alt="" class="img img4">
+            <img src="./images/icon-next.svg" alt="" class="next-btn">
+          </div>
+          <div class="thumbnails">
+            <img src="./images/image-product-1.jpg" alt="" class="thumbnail">
+            <img src="./images/image-product-2.jpg" alt="" class="thumbnail">
+            <img src="./images/image-product-3.jpg" alt="" class="thumbnail">
+            <img src="./images/image-product-4.jpg" alt="" class="thumbnail">
+          </div>
+        </div>
+        <div class="image-info">
+           <h3>sneaker company</h3>
+           <h1>fall limited edition sneakers</h1>
+           <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+            durable rubber outer sole, they’ll withstand everything the weather can offer.
+          </p>
+          <div class="prices">
+            <h3>$ 125.00</h3>
+            <h5 class="percentage">50%</h5>
+          </div>
+          <h5 class="original-price">$250.00</h5>
+          <div class="cart-info">
+            <div class="amount-controls">
+              <img src="./images/icon-minus.svg" alt="minus" class="control minus">
+              <h6 class="amount">0</h6>
+              <img src="./images/icon-plus.svg" alt=" plus" class="control plus">
+            </div>
+            <button class="cart-btn">
+              <img src="./images/white.cart.svg" alt="cart" class="cart">
+              <h5>Add to cart</h5>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+  
+  <!-- cart info -->
+  <div class="cart-content">
+    <div class="cart-name">
+      <h4>Cart</h4>
+    </div>
+    <div class="cart-items">
+      <!-- <div class="item-container">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="sneakers" class="cart-img">
+        <div class="item-info">
+          <p>
+            fall limited edition sneakers
+          </p>
+          <p class="cart-price">$<span class="price">125.00</span> <span class="times">x </span><span class="item-number">3</span> <span class="item-total-price">$375</span></p>
+        </div>
+        <img src="./images/icon-delete.svg" alt="" class="delete">
+      </div> -->
+      <!-- <button class="btn cart-btn">Checkout</button> -->
+    </div>
+  </div>
+  <!-- modal info -->
+  <div class="modal">
+    <div class="modal-container">
+      <img src="./images/white-close-btn.svg" alt="" class="modal-close-btn">
+      <img src="./images/icon-previous.svg" alt="" class=" modal-prev-btn">
+      <div class="modal-main-image">
+        <img src="./images/image-product-1.jpg" alt="" class="img modal-img1">
+        <img src="./images/image-product-2.jpg" alt="" class="img img2">
+        <img src="./images/image-product-3.jpg" alt="" class="img img3">
+        <img src="./images/image-product-4.jpg" alt="" class="img img4">
+      </div>
+      <img src="./images/icon-next.svg" alt="" class="modal-next-btn">
+      <div class="modal-thumbnails">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="" class="modal-thumbnail">
+        <img src="./images/image-product-2-thumbnail.jpg" alt="" class="modal-thumbnail">
+        <img src="./images/image-product-3-thumbnail.jpg" alt="" class="modal-thumbnail">
+        <img src="./images/image-product-4-thumbnail.jpg" alt="" class="modal-thumbnail">
+      </div>
+    </div>
+  </div>
+
+  <!-- toggle content -->
+
+  <div class="toggle-content">
+      <div class="content-container">
+        <img src="./images/icon-close.svg" alt="" class="close-btn">
+        <ul class="toggle-links">
+          <li class="toggle-link">Collections</li>
+          <li class="toggle-link">men</li>
+          <li class="toggle-link">women</li>
+          <li class="toggle-link">about</li>
+          <li class="toggle-link">contact</li>
+        </ul>
+      </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Fasina Ayomikun</a>.
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
